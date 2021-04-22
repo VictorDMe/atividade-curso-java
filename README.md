@@ -24,3 +24,5 @@ Este repo foi criado para guardar as atividades propostas pelo professor @acenel
 ### ProductHeritage :white_check_mark:
 > Atividade realizada para fixar o contéudo de herança e introduzir o polimorfismo.
 
+### PersonTax :white_check_mark:
+> Atividade realizada para fixar o contéudo de classe e métodos abstratos.
