@@ -14,7 +14,7 @@ public class FileExec {
         try (BufferedReader bf = new BufferedReader(new FileReader(path))) {
 
             boolean sucessoCriarPasta = new File(file.getParent() + "\\out").mkdir();
-
+            
             if (sucessoCriarPasta) {
                 System.out.println("Sucesso ao criar a pasta! \nCaminho: " + file.getParent() + "\\out");
             }
@@ -23,7 +23,7 @@ public class FileExec {
 
                 String linha = bf.readLine();
 
-                //Ler cada linha do arquivo produtos.csv
+                //Ler cada linha do arquivo produtos.csv e adicionar no summary.csv
                 while (linha != null) {
                     String[] produtos = linha.split(",");
                     bw.write("Nome do produto: " + produtos[0] + "\n" +
