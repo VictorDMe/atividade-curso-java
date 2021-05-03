@@ -27,7 +27,10 @@ public class FileExec {
                 while (linha != null) {
                     String[] produtos = linha.split(",");
                     bw.write("Nome do produto: " + produtos[0] + "\n" +
-                            "Custo total: $ " + Double.parseDouble(produtos[1]) * Double.parseDouble(produtos[2]) + "\n");
+                            "Preço unitário: " + produtos[1] + "\n" +
+                            "Total em estoque: " + produtos[2] + "\n" +
+                            "Custo total: $ " + Double.parseDouble(produtos[1]) * Double.parseDouble(produtos[2]) +
+                            "\n");
                     bw.newLine();
                     linha = bf.readLine();
                 }
